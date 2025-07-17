@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jack Sparrow Blog</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #f4f5f7;
+            color: #2c3e50;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #1f3c55;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin: 20px 0;
+            border: 2px solid #333;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 5px;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-family: inherit;
+        }
+
+        button {
+            background-color: #1f3c55;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #163040;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #1f3c55;
+            color: white;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Captain Jack Sparrow's Blog</h1>
+        <p>Rum, Adventure, and the Open Sea</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Captain's Log</h2>
+            <p>
+                It's a beautiful day in the Caribbean. The sun is shining, the sea is calm, and I'm out there chasing the horizon once again. 
+                Rum in hand, compass in pocket, and mischief in mind.
+            </p>
+            <img src="https://th.bing.com/th/id/OIP.zphw-WIPEVj3UIIheIgGUAHaHe?w=172&h=180&c=7&r=0&o=5&pid=1.7" alt="Jack Sparrow on the Sea">
+        </section>
+
+        <section>
+            <h2>Contact the Captain</h2>
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2025 Captain Jack Sparrow. No parrots were harmed.
+    </footer>
+
+</body>
+</html>

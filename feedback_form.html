@@ -1,8 +1,43 @@
-<h1>FeedBack Form</h1>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Feedback Form</title>
+  <style>
+    body {
+      text-align: center;
+      font-family: sans-serif;
+    }
+    form {
+      display: inline-block;
+      text-align: left;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
 
-        <form action="#">
-            <p>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required><br><br>
+  <h2>Feedback Form</h2>
+  <form>
+    <label>Name:<br>
+      <input type="text" name="name">
+    </label><br><br>
 
-            
+    <label>Email:<br>
+      <input type="email" name="email">
+    </label><br><br>
+
+    <label>Feedback:<br>
+      <textarea name="feedback" rows="4" cols="40"></textarea>
+    </label><br><br>
+
+    <label>How satisfied are you?<br>
+      <input type="radio" name="satisfaction" value="Satisfied"> Satisfied<br>
+      <input type="radio" name="satisfaction" value="Neutral"> Neutral<br>
+      <input type="radio" name="satisfaction" value="Unsatisfied"> Unsatisfied
+    </label><br><br>
+
+    <button type="submit">Submit</button>
+  </form>
+
+</body>
+</html>            

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Feedback Form</title>
+        <style>
+            body {
+            background-color: rgb(155, 221, 243);
+            margin-left: 300px auto;
+            font-family: Arial, sans-serif;
+            font-size: 15px ;
+            }
+            h1 {
+                color: rgb(255, 154, 77);
+                text-decoration:double;
+                text-align: center;
+                margin-top: 80px;
+            }
+            table {
+                margin:auto;
+                margin-top: 40px;
+                padding: 30px;
+                border: solid 1px black ;
+            }
+            #btn {
+                background-color:rgb(255, 154, 77);
+                border-radius: 4px;
+                height: 30px;
+                width: 100px;
+                border: none;
+            }
+            td{
+                padding: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Feedback Form</h1>
+        <table>
+            <form>
+                <tr>
+                    <td>
+                        <label for="name">Name : </label>
+                    </td>
+                    <td>
+                        <input type="text" id="name" name="name">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="email">Mail : </label>
+                    </td>
+                    <td>
+                        <input type="email" id="email" name="email">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="feedback">feedback message: </label>
+                    </td>
+                    <td>
+                        <textarea rows="5" cols="50" id="feedback"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="Review">How satisfied are you?</label>
+                    </td>
+                    <td>
+                        <input type="radio" name="Review" id="satisfied" value = "satisfied">
+                        <label for="Satisfied">Satisfied</label>
+                        <input type="radio" name="Review" id="neutral" value = "neutral">
+                        <label for="Neutral">Neutral</label>
+                        <input type="radio" name="Review" id="unsatisfied" value = "unsatisfied">
+                        <label for="Unsatisfied">Unsatisfied</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input id="btn" type="submit">
+                    </td>
+                </tr>
+            </form>
+        </table>
+    </body>
+</html>

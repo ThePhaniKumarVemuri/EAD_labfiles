@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Info</title>
+    <style>
+        body{
+            text-align: center;
+            margin-top: 160px;
+            background-color: aliceblue;
+        }
+        fieldset {
+            border: 2px solid #03cf40e4;
+            border-radius: 10px;
+            padding: 20px;
+            width: 40%;
+            margin: auto;
+            background-color: #eae7e7;
+        }
+        legend {
+            font-size: 22px;
+            color: #03cf40e4;
+        }
+        #btn{
+            background-color: #03cf40e4;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <fieldset>
+        <legend>Personal information: </legend>
+        <form>
+            <label for="fname">First Name:</label><br>
+            <input type="text" id="name" name="student_name" required /><br><br>
+
+            <label for="lname">Last Name:</label><br>
+            <input type="text" id="lname" name="lname" required /><br><br>
+            
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required /><br><br>
+
+            <label for="Phone">Phone Number:</label><br>
+            <input type="text" id="Phone" name="phone" required /><br><br>
+
+            <input id="btn" type="submit" value="Submit">
+        </form>
+    </fieldset>
+</body>
+</html>

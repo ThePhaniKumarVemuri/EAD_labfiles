@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Student Registration Form</title>
+    <style>
+        body{
+            background-image: url(images/register-bg.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+        }
+        h2{
+            color: rgb(49, 112, 214);
+        }
+        .form{
+            border: 1px solid black;
+            border-radius: 25px;
+            padding: 20px;
+            background-color: white;
+            max-width:fit-content;
+            margin: auto;
+            margin-top: 100px;
+            width: 50%;
+            align-items: center;
+        }
+        .input{
+            width: 100%;
+            border-radius: 5px;
+            height: 25px;
+        }
+        #btn{
+            background-color:rgb(1, 71, 184);
+            color: wheat;
+            width: 100%;
+            border-radius: 20px;
+            height: 40px;
+        }
+        #btn:hover{
+            background-color: rgb(1, 93, 154) ;
+            cursor: pointer;
+            transform:translateY(-3px) ;
+        }
+    </style>
+  </head>
+  <body>
+    <form>
+    <div class="form">
+        <h2>Student Registration Form</h2>
+
+      
+        <label for="name">Student Name:</label><br>
+        <input type="text" id="name" class="input" name="student_name" required /><br><br>
+
+        <label for="rollno">Roll Number:</label><br>
+        <input type="text" id="rollno" class="input" name="roll_number" required /><br><br>
+
+        
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" class="input" name="email" required /><br><br>
+
+        
+        <label for="Phone">Phone Number:</label><br>
+        <input type="text" id="Phone" class="input" name="phone" required /><br><br>
+
+        
+        <label>Gender:</label><br>
+
+        <input type="radio" name="gender" value="male" id="male" />
+        <label for="male">Male</label>
+        <input type="radio" name="gender" value="female" id="female" />
+        <label for="female">Female</label>
+        <input type="radio" name="gender" value="other" id="other" />
+        <label for="other">Other</label>
+        <br><br>
+        
+        <label>Branch</label><br>
+        <select class="input" name="branch" required>
+            <option value="">Select Branch</option>
+            <option value="cse">Computer Science</option>
+            <option value="ece">Electronics</option>
+            <option value="mech">Mechanical</option>
+            <option value="civil">Civil</option>
+            <option value="eee">Electrical</option>
+        </select>
+        <br><br>
+    
+        <button id="btn" type="submit">Submit</button>
+    </div>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+<html>
+    <body>
+        <h1>JWT Authentication Service</h1>
+        <p>This is a simple JWT authentication service.</p>
+
+        <script>
+            async function getProfile() {
+            const token = localStorage.getItem('token');
+            const res = await fetch('http://localhost:4000/api/auth/profile', { headers: { Authorization: `Bearer ${token}` }});
+            if (!res.ok) throw new Error('Unauthorized');
+                return await res.json();
+            }
+
+            getProfile().then(profile => {
+                document.body.insertAdjacentHTML('beforeend', `<h1>Welcome, ${profile.name}</h1>`);
+            }).catch(err => {
+                document.body.insertAdjacentHTML('beforeend', `<h2>Error: ${err.message}</h2>`);
+            });
+        </script>
+    </body>
+</html>

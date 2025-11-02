@@ -1,0 +1,51 @@
+<!-- Experiment 1: Design a Student Timetable using Bootstrap Containers, Grid, Images, and Buttons
+•	Create a timetable webpage using container/container-fluid and grid system.
+•	Each cell should display subject info and a small Bootstrap button for “Details”.
+•	Add subject logos/icons using .img-fluid.
+•	Analyze: Compare the effect of using .container vs .container-fluid on layout width. -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <title>Student Timetable</title>
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="text-center">Student Timetable</h1>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="images/math.jpg" class="card-img-top img-fluid" alt="Math">
+                        <div class="card-body">
+                            <h5 class="card-title">Mathematics</h5>
+                            <p class="card-text">Monday 9:00 AM - 10:30 AM</p>
+                            <a href="#" class="btn btn-primary">Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="images/science.jpg" class="card-img-top img-fluid" alt="Science">
+                        <div class="card-body">
+                            <h5 class="card-title">Science</h5>
+                            <p class="card-text">Tuesday 11:00 AM - 12:30 PM</p>
+                            <a href="#" class="btn btn-primary">Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="images/history.jpg" class="card-img-top img-fluid" alt="History">
+                        <div class="card-body">
+                            <h5 class="card-title">History</h5>
+                            <p class="card-text">Wednesday 1:00 PM - 2:30 PM</p>
+                            <a href="#" class="btn btn-primary">Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
